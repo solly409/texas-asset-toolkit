@@ -13,8 +13,8 @@ root.render(
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import ComingSoon from "./ComingSoon";
-import "./index.css"; // if you have global styles
+import ComingSoon from "./ComingSoon"; // instead of App
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,4 +22,3 @@ root.render(
     <ComingSoon />
   </React.StrictMode>
 );
-
