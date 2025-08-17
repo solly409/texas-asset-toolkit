@@ -1,6 +1,7 @@
 // Coming Soon page for Texas Asset Toolkit with embedded ConvertKit form in React and logo favicon
 
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function ComingSoon() {
   useEffect(() => {
@@ -84,6 +85,9 @@ export default function ComingSoon() {
       <footer className="mt-12 text-sm text-gray-500 text-center">
         © {new Date().getFullYear()} Texas Asset Toolkit. All rights reserved.
       </footer>
+
+      {/* Vercel Analytics */}
+      <Analytics />
     </div>
   );
 }
